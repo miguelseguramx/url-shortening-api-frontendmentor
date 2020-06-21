@@ -1,0 +1,86 @@
+.header-container
+  padding 40px 0 20px 0
+  display flex
+  position relative
+  justify-content space-between
+  z-index 10
+
+  .logo
+    display flex
+    align-items center
+    img
+      width 121px
+      height 33px
+
+  .checkbox
+    display none
+    &:checked ~ .menu
+      z-index 10
+      visibility visible
+
+  .checkbox-icon
+    padding-top 4px
+    span
+      width 28px
+      height 4px
+      margin-bottom 5px
+      border-radius 2px
+      display block
+      background-color var(--gray)
+
+  .menu
+    visibility hidden
+    position absolute
+    top 93px
+    width: 100%;
+    background-color var(--violet)
+    color white
+    border-radius 10px
+    padding 15px 25px 40px
+    font-weight 700
+
+    li
+      width 100%
+      text-align center
+      padding 15px
+      transition all 0.3s ease-in
+      &:hover
+        color black
+
+    .sections
+      padding 10px 0 20px
+      border-bottom 1px solid var(--grayViolet)
+      margin-bottom 15px
+
+  @media (min-width: 900px)
+    padding 50px 0
+    font-size 15px
+    .checkbox-icon
+      display none
+    .menu
+      visibility visible
+      padding 0 25px
+      position static
+      background-color white
+      display flex
+      justify-content space-between
+      color var(--gray)
+      li
+        padding 0 15px
+      .sections,
+      .user
+        padding 0
+        display flex
+        align-items center
+        margin-bottom 5px
+        justify-content space-between
+        border-bottom none
+        margin 0
+      .u-button
+        font-size 15px
+        padding 10px 25px
+        margin-top 0
+        margin-left 15px
+
+
+

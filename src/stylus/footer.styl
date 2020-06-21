@@ -1,0 +1,46 @@
+.footer
+  background-color var(--darkViolet)
+
+.footer-container
+  padding 55px 0
+  text-align center
+
+  .footer-content__container
+    margin 40px 0
+    h3
+      margin 22px 0
+      color white
+      font-size 0.85em
+
+    li
+      font-size 0.8em
+      margin 12px 0
+      color var(--gray)
+      transition all .3s ease-in
+      &:hover
+        color var(--cyan)
+
+  .social-media
+    width 100%
+    justify-content: center
+    display flex
+    margin-top 30px
+    img
+      margin 0 12px
+      transition all .3s ease-in
+      &:hover
+        transform scale(1.2)
+
+  @media (min-width: 900px)
+    padding 65px 20px
+    display grid
+    grid-template-columns 2fr repeat(4, 1fr)
+    grid-template-rows 1fr
+    text-align left
+    .social-media
+      margin 0
+      height min-content
+    .footer-content__container
+      margin 0
+      h3
+        margin-top 0

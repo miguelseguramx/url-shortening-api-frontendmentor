@@ -1,0 +1,74 @@
+.stadistics
+  text-align center
+  position relative
+  padding 40px 0
+  .title
+    @media(min-width: 900px)
+      font-size 2.2em
+      margin-bottom 20px
+  .subtitle
+    color #a3a2a8
+    font-size 0.9em
+    line-height 1.7em
+    @media(min-width: 900px)
+      font-size 1em
+      max-width 520px
+      margin 0 auto
+  .cards
+    position relative
+    &::before
+      position absolute
+      width 10px
+      top 0px
+      left calc(50% - 5px)
+      display block
+      background-color var(--cyan)
+      height 750px
+      content ""
+    @media(min-width: 900px)
+      margin 85px 0
+      text-align left
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 30px;
+      &::before
+        width auto
+        left 0
+        right 0
+        height 10px
+        top 45%
+  .card
+    background-color white
+    border-radius 15px
+    padding 60px 30px 20px
+    position: relative
+    margin-top 80px
+    .card-img__container
+      background-color var(--violet)
+      border-radius 50%
+      width 90px
+      left calc(50% - 45px)
+      position absolute
+      top -45px
+      height 90px
+      display flex
+      justify-content center
+      align-items center
+    .card-title
+      font-size 1.2em
+    .card-content
+      color #a3a2a8
+      font-size 0.84em
+      line-height 1.7em
+    @media(min-width: 900px)
+      border-radius 20px
+      height fit-content
+      &:nth-of-type(1)
+        margin-top 0px
+      &:nth-of-type(2)
+        margin-top 40px
+      &:nth-of-type(3)
+        margin-top 80px
+      .card-img__container
+        left 30px

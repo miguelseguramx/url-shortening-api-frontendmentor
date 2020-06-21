@@ -1,0 +1,108 @@
+@import 'header.styl'
+@import 'hero.styl'
+@import 'form.styl'
+@import 'promo.styl'
+@import 'footer.styl'
+@import 'results.styl'
+@import 'stadistics.styl'
+
+:root
+  --cyan: hsl(180, 66%, 49%)
+  --cyanHover: #9be3e2
+  --violet: hsl(257, 27%, 26%)
+  --red: hsl(0, 87%, 67%)
+  --gray: hsl(0, 0%, 50%)
+  --lightGray: #f0f1f6
+  --grayViolet: hsl(257, 7%, 63%)
+  --darkBlue: hsl(255, 11%, 22%)
+  --darkViolet: hsl(260, 8%, 14%)
+  --font: 'Poppins', sans-serif
+
+*, *::before, *::after
+  box-sizing border-box
+
+body
+  margin 0
+  font-family var(--font)
+  font-weight 500
+  background-color var(--white)
+  max-width 100vw
+  height 100%
+  font-size 18px
+
+ul
+  list-style none
+  padding 0
+  margin 0
+
+.u-wrapper
+  padding 0 24px
+  max-width 1200px
+  margin 0 auto
+  @media(min-width: 900px)
+    padding 0 50px
+
+.u-button
+  width 100%
+  min-width fit-content
+  color white
+  border none
+  font-size 18px
+  font-weight 700
+  background-color var(--cyan)
+  padding 15px 0
+  margin-top 10px
+  border-radius 30px
+  outline none
+  transition all 0.2s ease-in
+  cursor pointer
+  &:active
+    background-color var(--cyanHover)
+  &--short
+    padding 15px 45px
+    width fit-content
+  &--square
+    padding 15px 0
+    border-radius 5px
+    &:active
+      background-color var(--violet)
+  &--dark
+    background-color var(--violet)
+
+.u-input
+  border none
+  font-family var(--font)
+  padding 10px 15px
+  width 100%
+  font-size 18px
+  border-radius 8px
+
+.u-spinner
+  display none
+  z-index 10
+  width 60px
+  height 60px
+  position absolute
+  left calc(50% - 25px)
+  top calc(50% - 25px)
+  z-index 10
+  border-radius 50%
+  border 8px dashed var(--cyan)
+  animation rotate 1.5s infinite linear alternate
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.main
+  padding-top 70px
+  position relative
+  background-color var(--lightGray)
+  clip-path: polygon(0% 20px, 100% 0%, 100% 100%, 0% 100%);
+  @media(min-width: 900px)
+    padding-top 80px

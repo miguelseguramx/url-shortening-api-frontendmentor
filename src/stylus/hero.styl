@@ -1,0 +1,51 @@
+.hero
+  position relative
+  margin 20px 0
+  overflow hidden
+
+.hero-container
+  margin 10px 0 70px
+  text-align center
+
+  .hero__img-contaimer
+    width calc(100vw - 25px)
+    padding-bottom 10px
+    overflow hidden
+    .hero__img
+      max-height 330px
+
+  h1
+    font-size 40px
+    line-height 45px
+    margin-bottom 20px
+
+  p
+    color var(--gray)
+
+  @media (min-width: 900px)
+    display flex
+    flex-direction row-reverse
+    height 55vh
+
+    .hero__img-contaimer
+      width 50%
+      .hero__img
+        right -125px
+        position absolute
+        max-height 55vh
+        height 55vh
+    .hero__content
+      display flex
+      flex-direction column
+      align-items flex-start
+      text-align left
+      max-width 60%
+    h1
+      font-size 4.5em
+      line-height 1em
+      margin-bottom 0
+    p
+      margin-top 0
+      max-width 80%
+      font-size 1.2em
+

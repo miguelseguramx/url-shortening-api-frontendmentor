@@ -1,0 +1,48 @@
+.form-container
+  position relative
+  height 75px
+  z-index 2
+  @media(min-width: 900px)
+    height 80px
+
+.url-form
+  z-index 2
+  margin auto
+  padding 25px
+  width 100%
+  border-radius 8px
+  background-image url(../../images/bg-shorten-mobile.svg)
+  background-repeat no-repeat
+  background-position right top
+  background-color var(--violet)
+  background-size auto
+  position absolute
+  top 0
+  .error
+    display none
+  &--error
+    input[type=text]
+      border 3px solid var(--red)
+    .error
+      font-style italic
+      display block
+      color var(--red)
+      width fit-content
+  @media(min-width: 900px)
+    border-radius 12px
+    padding 50px 60px
+    background-image url(../../images/bg-shorten-desktop.svg)
+    display flex
+    input
+      font-size 1.2em
+      border-radius 12px
+    input[type=text]
+      padding-left 30px
+    .u-button--square
+      margin 0
+      margin-left 20px
+      width fit-content
+      padding 20px 40px
+    .error
+      position absolute
+      bottom 22px

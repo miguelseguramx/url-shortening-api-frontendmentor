@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <title>Shortly URL | Miguel Segura Mx</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="u-wrapper">
+      <div class="header-container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="Shortly Icon">
+        </div>
+        <input class="checkbox" type="checkbox" name="menu" id="menu">
+        <label for="menu" class="checkbox-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="menu">
+          <ul class="sections">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+          <ul class="user">
+            <li>Login</li>
+            <button class="u-button">Sign Up</button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="u-wrapper">
+      <div class="hero-container">
+        <div class="hero__img-contaimer">
+          <img class="hero__img" src="./images/illustration-working.svg" alt="">
+        </div>
+        <div class="hero__content">
+          <h1>More than just shorter links</h1>
+          <p>Build your brand’s recognition and get detailed insights 
+      on how your links are performing.</p>
+          <button class="u-button u-button--short">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form">
+    <div class="u-wrapper">
+      <div class="form-container">
+        <form class="url-form" action="">
+          <span class="u-spinner"></span>
+          <input class="u-input u-input" type="text" name="shorterInput" placeholder="Shorten a link here" id="shorterInput">
+          <span class="error">Please add a link</span>
+          <input type="submit" value="Shorten It!" class="u-button u-button--square">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+    <div class="u-wrapper">
+      <section class="url-results">
+      </section>
+      <section class="stadistics">
+        <h2 class="title">Advanced Statistics</h2>
+        <p class="subtitle">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-img__container">
+              <img src="./images/icon-brand-recognition.svg" alt="Detail Recods Logo">
+            </div>
+            <h3 class="card-title">Brand Recognition</h3>
+            <p class="card-content">Boost your brand recognition with each click. Generic links don’t  mean a thing. Branded links help instil confidence in your content.</p>
+          </article>
+          <article class="card">
+            <div class="card-img__container">
+              <img src="./images/icon-detailed-records.svg" alt="Detail Recods Logo">
+            </div>
+            <h3 class="card-title">Detailed Records</h3>
+            <p class="card-content"> Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+          </article>
+          <article class="card">
+            <div class="card-img__container">
+              <img src="./images/icon-fully-customizable.svg" alt="Detail Recods Logo">
+            </div>
+            <h3 class="card-title">Fully Customizable</h3>
+            <p class="card-content">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <section class="promo">
+    <h2>Boost your links today</h2>
+    <button class="u-button u-button--short">Get Started</button>
+  </section>
+
+  <footer class="footer">
+    <div class="u-wrapper">
+      <div class="footer-container">
+        <div class="footer__img-container">
+          <img src="./images/logo-white.svg" alt="Shortly Logo">
+        </div>
+        <div class="footer-content__container">
+          <h3>Features</h3>
+          <ul>
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+
+        <div class="footer-content__container">
+          <h3>Resources</h3>
+          <ul>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="footer-content__container">
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <div class="social-media">
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+          <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+          <img src="./images/icon-pinterest.svg" alt="Pinterest Icon">
+          <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/js/index.js"></script>
+</body>
+</html>
